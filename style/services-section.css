@@ -1,0 +1,140 @@
+
+.services-section
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+
+.services-header
+{
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 15px;
+    position: relative;
+ 
+  
+    
+}
+
+.services-header__overlap
+{
+    margin-bottom: 75px;
+    height: 8px;
+
+   
+}
+
+
+.services-container__grid
+{
+    width: 80%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px;
+    align-content: center;
+    justify-content: center;
+    
+}
+.services-item1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ 
+   
+}
+
+.services-item__img
+{
+    width: 60px;
+}
+
+.services-img__header
+{
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+   
+  
+}
+
+.services-section__paragraph
+{
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 10px;
+    font-weight: 300;
+    color: black;
+   
+}
+
+
+@media screen and (max-width:1024px){
+    .services-container__grid{
+        width: 100%;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, 315px);
+    }
+
+    .services-section__paragraph
+    {
+        padding: 10px;
+        margin-top: 10px;
+        
+    }
+
+    .services-item__img{
+        width: 50px;
+    }
+    .services-header__overlap
+    {
+        margin-bottom: 65px;
+    }
+  
+}
+
+
+
+@media screen and (max-width:768px)
+{
+
+    .services-container__grid
+    {
+        grid-template-columns: repeat(auto-fit, 350px);
+      
+    }
+
+.services-img__header
+{
+    margin-top: 10px;
+}
+   .services-header
+   {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    font-size: 35px;
+       
+   }
+   .services-section__paragraph
+   {
+       margin-top: 5px;
+       padding: 5px;
+   }
+   
+}

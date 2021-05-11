@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+.baner
+{
+    background-image: url("../picture/baner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+
+.baner::before
+{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.836);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.baner-information_box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    color: white;
+    z-index: 5;
+}
+
+.baner-header_h3
+{
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    border-bottom: solid 1px rgb(110, 95, 95);
+    padding: 10px 15px;
+    
+}
+.baner-header_h1{
+  margin-top: 60px;
+  font-size: 68px;
+  font-weight: 300;
+  font-family:  sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.baner-button
+{
+ color: white;
+ text-decoration: none;
+ margin-top: 70px;
+ font-size: 15px;
+ font-family: sans-serif;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ padding: 17px 35px;
+ border: solid 1px white;
+ position: relative;
+ z-index: 6;
+ transition: 0.8s ease-in-out;
+}
+
+.baner-button:hover
+{
+    color: black;
+    
+}
+
+.baner-button::before{
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+   right:50%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: 0.8s ease-in-out;
+    
+}
+
+.baner-button:hover::before
+{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+
+}
+
+
+
+@media screen and (max-width:1024px){
+    .baner-header_h1{
+        padding: 0 30px;
+        font-size: 50px;
+    }
+
+    .baner-header_h3{
+        font-size: 19px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:768px){
+    .baner-header_h1{
+        
+        font-size: 25px;
+        margin-top: 0;
+        letter-spacing: 6px;
+       
+    }
+
+    .baner-header_h3{
+        font-size: 14px;
+        margin-bottom: 20px;
+        letter-spacing: 7px;
+       
+
+    }
+    
+    .baner{
+        height: 50vh;
+    }
+
+    .baner-information_box
+    {
+        justify-content: center;
+    }
+
+    .baner-button
+    {
+        margin-top: 30px;
+      
+    }
+}

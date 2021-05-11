@@ -1,0 +1,163 @@
+
+.contact
+{
+    border-top: solid 1px rgb(90, 90, 90);
+    border-bottom: solid 1px rgb(90, 90, 90);
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact__container
+{
+    
+    display: flex; 
+   justify-content: center;
+   align-items: center;
+    width: 70%;
+   height: 100%;
+   margin: 0 auto;
+   
+}
+
+.footer-logo
+{
+    font-size: 55px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 4px;   
+    border-right: solid 1px rgb(85, 85, 85);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    
+   
+  
+}
+
+.logo::first-letter
+{
+color: white;
+}
+
+.footer-contact__information
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+   
+   
+  
+ 
+}
+
+.footer-contact__infotmation--header
+{
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.footer-information__container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin-left: 20px;   
+}
+
+
+@media screen and (max-width:1024px)
+{
+
+    .footer-contact__container
+{
+
+    width: 100%;
+   
+}
+
+.footer-logo
+{
+    font-size: 45px;
+}
+
+.footer-information__container
+{
+    width: 200px;
+}
+
+.footer-contact__infotmation--header
+{
+    
+    font-size: 18px;
+}
+
+
+
+}
+
+
+@media screen and (max-width:768px)
+{
+
+    .footer-contact__container
+    {
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .footer-logo
+{
+    border-right: unset;
+    margin-bottom: 0;
+
+}
+
+.footer-information__container
+{
+    width: 100%;
+}
+}
+
+
+
+@media screen and (max-width:430px)
+{
+
+    .contact
+    {
+        height:600px;
+        flex-direction: column;
+        border-bottom: unset;
+    }
+    .footer-contact__container
+    {
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+      
+       
+       
+
+    }
+
+    .footer-logo
+{
+    border-right: unset;
+}
+
+.footer-information__container
+{
+    width: 100%;
+    margin: 10px auto;
+}
+}

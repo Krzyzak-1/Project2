@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?19098358');
+  src: url('../font/fontello.eot?19098358#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?19098358') format('woff2'),
+       url('../font/fontello.woff?19098358') format('woff'),
+       url('../font/fontello.ttf?19098358') format('truetype'),
+       url('../font/fontello.svg?19098358#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?19098358#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-leaf:before { 
+  content: '\e800'; 
+  width: 220px;
+  font-size: 50px; 
+  color: rgb(255, 255, 255);
+   border-bottom: solid 1px rgb(247, 247, 247);
+  text-align: center;
+ padding: 20px 0;
+ margin: 0 auto;
+ display: block;
+ 
+
+ 
+    
+
+} /* '' */
+.icon-camera:before { 
+  content: '\e801'; 
+  font-size: 50px; 
+  color: white;
+   border-bottom: solid 1px rgb(247, 247, 250);
+  text-align: center;
+  width: 220px;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: block;
+  
+  
+
+} /* '' */
+.icon-mail-alt:before {
+   content: '\f0e0'; 
+   width: 220px;
+   font-size: 50px; 
+   color: white;
+    border-bottom: solid 1px rgb(253, 253, 255);
+   text-align: center;
+   padding: 20px 0;
+   margin: 0 auto;
+   display: block;
+   
+  
+} /* '' */
+.icon-coffee:before { 
+  content: '\f0f4'; 
+  width: 220px;
+  font-size: 50px; 
+  color: white;
+   border-bottom: solid 1px rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: block;
+ 
+
+} /* '' */
+
+/*Fontello footer*/
+
+.icon-phone:before { 
+  content: '\e802';
+  color: white;
+  font-size:40px;
+  border-bottom: solid 1px  rgb(88, 88, 88);
+  width: 220px;
+  padding: 10px 0;
+ } /* '' */
+.icon-home:before { 
+  content: '\e803';
+  color: white;
+  font-size: 40px;
+  border-bottom: solid 1px rgb(88, 88, 88);
+  width: 220px;
+  padding: 10px 0;
+  
+ } /* '' */
+.icon-mail:before { 
+  content: '\f0e0';
+  color: white;
+  font-size: 40px;
+  border-bottom: solid 1px  rgb(88, 88, 88);
+  width: 220px;
+  padding: 10px 0;
+
+ 
+} /* '' */
+
+
+@media screen and (max-width:1024px)
+{
+
+
+  .icon-phone:before, .icon-home:before , .icon-mail:before { 
+    
+    color: white;
+    font-size:30px;
+    width: 190px;
+  
+   } /* '' */
+  }
+
+
+/*Fontello Rsponsive section About-Us*/
+@media screen and  (max-width:768px)
+{
+
+.icon-leaf:before { 
+
+  width: 280px;
+  font-size: 40px;   
+  margin: 0 auto;
+  
+
+} /* '' */
+
+.icon-coffee:before { 
+  
+  width: 280px;
+  font-size: 40px;   
+  margin: 0 auto;
+ 
+
+} /* '' */
+.icon-mail-alt:before { 
+ 
+  width: 280px;
+  font-size: 40px;   
+  margin: 0 auto;
+
+
+} /* '' */
+.icon-camera:before { 
+  
+  width: 280px;
+  font-size: 40px;   
+  margin: 0 auto;
+  
+
+} /* '' */
+
+
+
+.icon-phone:before, .icon-home:before , .icon-mail:before { 
+    
+  color: white;
+  font-size:30px;
+  width: 200px;
+}
+
+
+@media screen and (max-width:430px) {
+  
+  
+.icon-phone:before, .icon-home:before , .icon-mail:before { 
+    
+  color: white;
+  font-size:30px;
+  width: 320px;
+  margin:  0 auto;
+}
+
+
+}
+}
